@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>De Bamischijf Van Vijf</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="../Opdracht1/index.html">Opdracht 1</a></li>
+            <li><a href="../Opdracht2/index.html">Opdracht 2</a></li>
+            <li><a href="Opdracht3/index.html">Opdracht 3</a></li>
+            <li><a href="../Opdracht4/index.html">Opdracht 4</a></li>
+            <li><a href="test/test.html">Test Resultaten</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Calorie-checker</h1>
+
+        <h2>Producten</h2>
+
+
+        <section id="product">
+            <img id="frikandel" draggable="true" ondragstart="drag(event, 350, 15)" src="image/frikandel.jpg" alt="frikandel" />
+            <img id="kroket" draggable="true" ondragstart="drag(event, 200, 50)" src="image/kroket.jpg" alt="kroket" />
+            <img id="bami-schijf" draggable="true" ondragstart="drag(event, 325, 90)" src="image/bami.jpg" alt="bami" />
+            <img id="kipcorn" draggable="true" ondragstart="drag(event, 420, 50)" src="image/kipcorn.jpg" alt="kipcorn" />
+            <img id="loempia" draggable="true" ondragstart="drag(event, 210, 30)" src="image/loempia.jpg" alt="loempia" />
+
+            <img id="patat250gr" draggable="true" ondragstart="drag(event, 323, 30)" src="image/bakje-patat.jpg" alt="patat250" />
+            <img id="patat500gr" draggable="true" ondragstart="drag(event, 646, 60)" src="image/bakje-patat.jpg" alt="patat500" />
+            <img id="shoarma" draggable="true" ondragstart="drag(event, 760, 150)" src="image/shoarma.png" alt="shoarma" />
+            <img id="pizza" draggable="true" ondragstart="drag(event, 900, 300)" src="image/pizza.png" alt="pizza" />
+            <img id="kipfilet" draggable="true" ondragstart="drag(event, 120, 3)" src="image/kipfilet.jpg" alt="kipfilet" />
+
+            <img id="nasi-schijf" draggable="true" ondragstart="drag(event, 325, 30)" src="image/nasi.jpg" alt="nasi-schijf" />
+            <img id="kipnuggets6stuks" draggable="true" ondragstart="drag(event, 355, 130)" src="image/kipnugget.jpg" alt="kipnuggets" />
+            <img id="broodje-hamburger" draggable="true" ondragstart="drag(event, 400, 300)" src="image/brhamburger.jpg" alt="broodje hamburger" />
+            <img id="frikandel-speciaal" draggable="true" ondragstart="drag(event, 600, 300)" src="image/frikandelspc.jpg" alt="Frikandel speciaal" />
+            <img id="berehap-pinda" draggable="true" ondragstart="drag(event, 500, 33)" src="image/berehap.png" alt="Berenhap-pinda" />
+
+
+
+
+        </section>
+    </section>
+
+    <section id="updateGender">
+        <p id="test">Update geslacht naar man/vrouw:</p>
+        <form method="get" >
+            <select onchange="changeGender()" id="genderchange">
+                <option id="man" selected value="man">Man</option>
+                <option id="vrouw" value="vrouw">Vrouw</option>
+            </select>
+        </form>
+    </section>
+
+
+    <section id="bestelling">
+        <h2>Bestelling</h2>
+        <hr>
+        <p>Bestel een product door het product naar je bord te slepen.</p>
+        <div ondrop="drop(event)" ondragover="allowDrop(event)" id="bord"></div>
+    </section>
+
+    <section id="bestellingoverzicht">
+        <h2>Bestelling overzicht</h2>
+        <hr>
+        <p>Hieronder een overzicht van je bestelling op dit moment.</p>
+        <p id="bestellinglist">
+
+        </p>
+    </section>
+
+    <section id="scorebord">
+        <h2>Scorebord</h2>
+        <hr>
+        <p>Hieronder een tabel met de huidige vetten en calorieën.</p>
+        <table>
+            <tr>
+                <th>Vetten</th>
+                <th>Calorieën</th>
+            </tr>
+            <tr>
+                <td id="vetten">0</td>
+                <td id="calo">0</td>
+            </tr>
+            <tr>
+                <td>Aant. prod: </td>
+                <td id="aantal">0</td>
+            </tr>
+            <tr>
+                <td>Max. Calorieën:</td>
+                <td id="maxCaloGender">2500</td>
+            </tr>
+            <tr>
+                <td>Max. Calo. Behaald:</td>
+                <td id="maxCalo">0 %</td>
+            </tr>
+            <tr>
+                <td><button>Opslaan</button></td>
+                <td><button onclick="location.reload()">Reset</button></td>
+
+            </tr>
+        </table>
+    </section>
+
+
+</body>
+</html>

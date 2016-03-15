@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="map.js"></script>
+    <title>Google Maps</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7781887-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7obI9MRDeB9oYVjHCHlUl0lirnhAWtoo&callback=initMap">
+    </script>
+    <script> jQuery(document).ready(function() {twitterFetcher.fetch( 'XXXXXXXXXX', 'twitter-news', 3, true);});</script>
+    <script type="text/javascript" src="feed.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            // running custom RSS functions
+            parseRSS('http://www.alarmeringen.nl/feeds/all.rss', '#feed');
+        });
+    </script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="../Opdracht1/index.html">Opdracht 1</a></li>
+        <li><a href="../Opdracht2/index.html">Opdracht 2</a></li>
+        <li><a href="../Opdracht3/index.html">Opdracht 3</a></li>
+        <li><a href="Opdracht4/index.html">Opdracht 4</a></li>
+        <li><a href="test/test.html">Test Resultaten</a></li>
+    </ul>
+</nav>
+<article>
+    <section>
+        <h1>Alarm feed</h1>
+        <hr>
+        <div id="feed">
+
+        </div>
+    </section>
+    <section>
+        <h1>Test resultaten</h1>
+        <hr>
+
+        <p>Kijk ook op <a href="test/test.html">deze pagina</a> voor test resultaten.</p>
+    </section>
+</article>
+<article>
+    <section>
+        <h1>Google map API</h1>
+        <hr>
+        <div id="map" onload="initMap()" style="width:500px;height:380px;"></div>
+        <p>Deze map toont alle stations die we konden krijgen van de NS d.m.v. een XML bestand.</p>
+        <p>Kijk ook op <a href="directions.html">deze pagina</a> voor een andere google maps API.</p>
+    </section>
+</article>
+
+
+</body>
+
+</html>

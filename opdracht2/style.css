@@ -1,0 +1,161 @@
+/*Standard nav*/
+#main ul {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#main ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+}
+
+#main ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    display: block;
+}
+
+#main ul li a:hover {
+    background-color: lightskyblue;
+    transition: 0.5s;
+}
+
+html {
+    background: url("back.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    font-family: verdana;
+    width: 99%;
+    color: lightgray;
+}
+h1 {
+    font-size: 25pt;
+}
+nav {
+    margin-bottom: 20px;
+    margin-top: 7px;
+    float: left;
+    width: 80%;
+
+}
+aside a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid black;
+
+    background-color: #333;
+    border-radius: 10px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+    transition: 1s ease-in-out;
+}
+
+.active {
+    background-color:#4CAF50;
+}
+
+article {
+    margin-left: 10px;
+    background-color: #333;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+article p, h3, h2 {
+
+    margin-left: 10px;
+}
+
+#contact img {
+    width: 500px;
+    margin: 5px 10px 10px 10px;
+    float: left;
+    border-radius: 10px;
+}
+
+#contact img:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+#header {
+    width: 100%;
+    float:left;
+}
+section {
+    float: left;
+    width: 40%;
+
+}
+
+section img {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+#contact {
+    width: 80%;
+}
+
+aside {
+    float: left;
+    width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #main ul li {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    section {
+        width: 100%;
+        float: left;
+    }
+
+    aside {
+        width: 100%;
+        float: left;
+    }
+    /* contact.html */
+    #contact {
+        width: 768px;
+    }
+}

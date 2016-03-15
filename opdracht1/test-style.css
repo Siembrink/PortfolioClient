@@ -1,0 +1,64 @@
+/*Standard nav*/
+nav ul {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: lightskyblue;
+    transition: 0.5s;
+}
+
+td, tr {
+    border: 1px solid black;
+    font-family: verdana;
+}
+td {
+    width: auto;
+
+}
+body {
+    font-family: verdana;
+}
+
+td:last-child {
+    white-space: nowrap;
+    overflow: hidden;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#html td:last-child {
+    background-color: green;
+}
+
+#css td:last-child {
+    background-color: green;
+}
+
+#java td:last-child {
+    background-color: gray;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
